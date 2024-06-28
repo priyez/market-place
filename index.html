@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Point</title>
+    <!-- Link to external CSS stylesheet -->
+<!--     <link rel="stylesheet" href="./style.css"> -->
+  
+    <!-- Internal CSS for styling the webpage -->
+  <style>
+    body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+}
+header {
+    background-color: #4CAF50; /* Green background for the header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+h1, h2 {
+    margin: 0; /* Remove default margin */
+}
+h1 {
+    font-size: 2.5em; /* Larger font size for main heading */
+}
+h2 {
+    font-size: 1.5em; /* Smaller font size for subheadings */
+    margin-bottom: 20px;
+}
+.container {
+    padding: 20px; /* Padding around the main content */
+}
+.products {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+.products li {
+    background-color: #f0f0f0; /* Light gray background for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}
+.form-container {
+    width: 100%; /* Full width for form-container */
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 400px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form */
+}
+.form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"] {
+    width: 95%; /* Full width for input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+.form-container button {
+    width: 100%; /* Full width for the button */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em;
+}
+.form-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%; /* Full width on smaller screens */
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"] {
+        width: 92%; /* 92% width for input fields on smaller screens */
+    }
+}
+  </style>
+
+</head>
+<body>
+    <!-- Header section with main title and subtitle -->
+    <header>
+        <h1>Market Point</h1>
+        <h2>Bringing the physical market to your doorstep</h2>
+    </header>
+    <!-- Main container for the content -->
+    <div class="container">
+        <div class="intro">
+            <p>We are one of the best platforms in the world and Nigeria at large, bringing buying and selling to your doorstep.</p>
+        </div>
+        <hr> <!-- Horizontal line to separate sections -->
+        <!-- Section listing the types of materials available -->
+        <h2>We offer many types of materials you can buy from:</h2>
+        <ul class="products">
+            <li>Household Items</li>
+            <li>Clothes</li>
+            <li>Phones</li>
+            <li>Laptops</li>
+            <li>Shoes</li>
+            <li>Chairs</li>
+            <li>Etc</li>
+        </ul>
+        <h2>With over 2,000 satisfied clients both in Nigeria and beyond</h2>
+        <!-- Form container for user input -->
+        <div class="form-container">
+            <form action="get">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Surname" required>
+                <input type="email" placeholder="Valid Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
